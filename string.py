@@ -53,7 +53,20 @@ print "str.capitabize() : ", str.capitalize()
 
 print "=================================================="
 print "str.center (with. fillchar): Returns a space-padded string with original string centered to a total of width columns "
-
 str = "this is string example ... wow!!!"
 print "str is ", str
 print "str.center(40, 'a')", str.center(40, 'a')
+
+print "=================================================="
+print "count(str, beg = 0, end = len(string)): Count how many times str occures in string or in a substring of string  if starting insex beg and ending index end are given"
+str = "this is string example ... wow!!!"
+sub ="i"
+print "str.count(sub, 4, 40) : ", str.count(sub, 4, 40)
+sub = "wow";
+print "str.count(sub) : ", str.count(sub)
+
+print "=================================================="
+
+
+
+print "=================================================="
