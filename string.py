@@ -43,5 +43,17 @@ none-printable character such as TAB ( \t ) nd they will show up that way when d
 NEWLINEs with in string, where explicitly given like this within the brackets [ \n ], or just
 a NEWLINE within the variable assignment will also show up.
 """
-
 print para_str
+
+print "=================================================="
+print "capitabize() : Return a copy the string only its first character capitalized."
+str = "this is tring example ... wow !!!"
+print "str is ", str
+print "str.capitabize() : ", str.capitalize()
+
+print "=================================================="
+print "str.center (with. fillchar): Returns a space-padded string with original string centered to a total of width columns "
+
+str = "this is string example ... wow!!!"
+print "str is ", str
+print "str.center(40, 'a')", str.center(40, 'a')
