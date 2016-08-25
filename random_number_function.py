@@ -36,5 +36,16 @@ random.seed(10)
 print "Random number with seed 10 : ", random.random()
 
 print "==================================================================="
+print "shuffle(lst): Randomizes the items of a list in place. Return None"
+list = [20, 16, 10, 5]
+random.seed(100)
+random.shuffle(list)
+print "Resheffled list : ", list
+random.seed(199)
+random.shuffle(list)
+print "Reshuffed list : ", list
 
 print "==================================================================="
+print "uniform(x, y): a=A random float r, such that x is less than or equal to r and r is less than y"
+print "Random float uniform(5, 10) : ", random.uniform(5, 10)
+print "Random float uniform(7, 14) : ", random.uniform(7, 14)
