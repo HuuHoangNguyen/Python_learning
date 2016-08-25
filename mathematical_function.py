@@ -75,7 +75,19 @@ print "min(-80, -20, -10) : ", min(-80, -20, -10)
 print "min(0, 100, -400) : ", min(0, 100, -400)
 
 print "============================================================"
+print "modf(x):The feacrional and integer parts of x in a two-item tuple."
+print "Both parts have the same sign as x. The integer part is return as a float"
+print "math.modf(100.12) : ", math.modf(100.12)
+print "math.modf(100.72) : ", math.modf(100.72)
+print "math.modf(119L) : ", math.modf(119L)
+print "math.modf(math.pi) : ", math.modf(math.pi)
+
 print "============================================================"
+print "pow(x): the value of x^y"
+print "math.pow(100, 2) : ", math.pow(100, 2)
+print "math.pow(100, -2) : ", math.pow(100, -2)
+print "math.pow(2, 4) : ", math.pow(2, 4)
+print "math.pow(3, 0) : ", math.pow(3, 0)
 
 print "============================================================"
 
