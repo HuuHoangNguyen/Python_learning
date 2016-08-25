@@ -66,7 +66,50 @@ sub = "wow";
 print "str.count(sub) : ", str.count(sub)
 
 print "=================================================="
+print "decode(encoding='UTF-8', errors='strict'): Decode the string using the codec registered for encoding."
+print "Encoding defaults to the default tring encoding"
+Str = "this is tring example...wow!!!"
+print "String is ", Str
+#Str = Str.encode('base64', 'strict')
 
+#print "Encoded string: " + str
+#print "Encoded String : " + Str.decode('base64', 'strict')
 
+print "=================================================="
+print "endswith(suffix , start=0, end=len(string)) :  Determines if string or substring (if start index start and ending index end are given) "
+print "ends with suffix; returns true if so and false otherwise"
+str = "this is string example...wow!!!"
+suffix="wow!!!"
+print str.endswith(suffix)
+print str.endswith(suffix, 20)
+suffix = "is"
+print str.endswith(suffix, 2, 4)
+print str.endswith(suffix, 2, 6)
 
+print "=================================================="
+print "expandtabs(tabsize = 8): Expands tabs in string to multiple space; default to 8 spaces per tab if tabsize not provided"
+str = "this is \t string example ...wow!!!"
+print "string with expanded tab is 4  : " + str.expandtabs(4)
+print "string with expanded tab is 8  : " + str.expandtabs(8)
+print "string with expanded tab is 2  : " + str.expandtabs(2)
+
+print "=================================================="
+print "find(str, begin=0, end=len(string) : Determin if str occurs in string or in a substring of string if starting index begin and )"
+print "ending index end are given returns index if found and -1 otherwise"
+str1 = "this is a string example....wow!!!"
+str2 = "exam"
+print str1.find(str2)
+print str1.find(str2, 10)
+print str1.find(str2, 40)
+
+print "=================================================="
+print "=================================================="
+print "=================================================="
+print "=================================================="
+print "=================================================="
+print "=================================================="
+print "=================================================="
+print "=================================================="
+print "=================================================="
+print "=================================================="
 print "=================================================="
