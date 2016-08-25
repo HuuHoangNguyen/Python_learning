@@ -54,9 +54,25 @@ print "math.log(119L) : ", math.log(119L)
 print "math.log(math.pi) : ", math.log(math.pi)
 
 print "============================================================"
-print "============================================================"
+print "log10(x): The base-10 logarithm of x for x > 0"
+print "math.log10(100.12) : ", math.log10(100.12)
+print "math.log10(100.72) : ", math.log10(100.72)
+print "math.log10(119L) : ", math.log10(119L)
+print "math.log10(math.pi) : ", math.log10(math.pi)
 
 print "============================================================"
+print "max(x1, x2, ...): the largest of its arguments, the value closet to positive intinity"
+print "max(80, 109, 1000) : ", max(80, 100, 1000)
+print "max(-20, 100, 400) : ", max(-20, 100, 400)
+print "max(-80, -20, -10) : ", max(-80, -20, -10)
+print "max(0, 100, -400) : ", max (0, 100, -400)
+
+print "============================================================"
+print "min(x1, x2, x3, ...): the smallest of its arguments: the value closest to negative infinity"
+print "min(80, 100, 1000) : ", min(80, 100, 1000)
+print "min(-20, 100, 400) : ", min(-20, 100, 400)
+print "min(-80, -20, -10) : ", min(-80, -20, -10)
+print "min(0, 100, -400) : ", min(0, 100, -400)
 
 print "============================================================"
 print "============================================================"
