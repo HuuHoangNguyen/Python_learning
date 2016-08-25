@@ -90,5 +90,14 @@ print "math.pow(2, 4) : ", math.pow(2, 4)
 print "math.pow(3, 0) : ", math.pow(3, 0)
 
 print "============================================================"
+print "round(x, [,n]): x rounded to n digits from the decimal point"
+print "Python rounds away from zero as a tie-breaker: rount(0.5) is 1.0 and round(-0.5) is -1.0"
+print "round(80.23456, 2) : ", round(80.23456, 2)
+print "round(100.00056, 3) : ", round(100.00056, 3)
+print "round(-1009.00056, 3) : ", round(-100.00056, 3)
 
 print "============================================================"
+print "sqrt(x): The square root of x for x  > 0"
+print "math.sqrt(100) : ", math.sqrt(100)
+print "math.sqrt(7) : ", math.sqrt(7)
+print "math.sqrt(math.pi) : ", math.sqrt(math.pi)
