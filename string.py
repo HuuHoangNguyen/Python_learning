@@ -100,11 +100,133 @@ print str1.find(str2, 10)
 print str1.find(str2, 40)
 
 print "=================================================="
+print "index(str, begin-0, end=len(string)): Same as find(), but raises an exception "
+print "if str not found"
+str1 = "this is string example...wow!!!"
+str2 = "exam"
 
+print str1.index(str2)
+print str1.index(str2, 10)
+#print str1.index(str2, 40)
 
 print "=================================================="
+print "isalnum(): Returns true if string has at least 1 character and all characters"
+print "are alphanumeric and false otherwise"
+str = "this2009" #No space in this string
+print "String is: ", str
+print str.isalnum()
+
+str = "this is string example...wow!"
+print "String is: ", str
+print str.isalnum()
+
 print "=================================================="
+print "isalpha(): Returns true if has a least 1 character and all characters"
+print "are alphabetic and false otherwise"
+str = "this"    # No space & digit in this string
+print "String is: ", str
+print str.isalpha()
+
+str = "this is string example....wow!!!"
+print "String is: ", str
+print str.isalpha()
+
 print "=================================================="
+print "isdigit(): Returns true if string contains only digits and false otherwise"
+str = "123456"          #Only digit in this string
+print "String is: ", str
+print str.isdigit()
+
+str = "this is string example....wow!!!"
+print "String is: ", str
+print str.isdigit()
+
+print "=================================================="
+print "islower(): Returns true if string has at least 1 cased character and all cased characters are in "
+print "lowercase and false otherwise"
+str = "THIS is string example....wow!!!"
+print "String is: ", str
+print str.islower()
+
+str = "this is string example...wow!!!"
+print "String is: ", str
+print str.islower()
+
+print "=================================================="
+print "isnumeric(): Returns true if a unicode string contains only numeric character anf false otherwise"
+str = u"thisi2009"
+print "String is: ", str
+print str.isnumeric()
+
+str = u"23443434"
+print "Strign is: ", str
+print str.isnumeric()
+
+print "=================================================="
+print "isspace(): Returns true if string contains only whitespace character and false otherwise"
+str = "                "
+print "String is :", str
+print str.isspace()
+
+str = "This is string example....wow!!!"
+print "String is: "
+print str.isspace()
+
+print "=================================================="
+print "istitle(): Returns true if string is properly 'titlecased' and false otherwise"
+str = "This Is String Example...Wow!!!"
+print "String is: ", str
+print str.istitle()
+
+str = " This is string example....wow!!!"
+print "String is : ", str
+print str.istitle()
+
+print "=================================================="
+print "isupper(): Returns true if all characters are in uppercase and false otherwise"
+str = "THIS IS STRING EXAMPLE....WOW!!!"
+print "String is: ", str
+print str.isupper()
+
+str = "THIS is string example....wow!!!"
+print "String is: ", str
+print str.isupper()
+
+print "=================================================="
+print "join(seq): Merges(cncatenated) the string reoresentations of elements in sequence sew into "
+print "a string, with separator string"
+str = "_"
+seq = ("a", "b", "c")       #This is sequence of string
+print str.join(seq)
+
+print "=================================================="
+print "len(string): Returns the length of string"
+str = "This is string example....wow!!!"
+print "The string is: ", str
+print "Length of the string is: ", len(str)
+
+print "=================================================="
+print "ljust(wirdth[,fillchar]): Returns a space-padded string wirh the original string left-justified to a total of with columns"
+str = "this is string example....wow!!!"
+print "The string is: ", str
+print str.ljust(50, '0')
+
+print "=================================================="
+print "lower(): Converts all uppercase letters in string to lowercase"
+str = "THIS IS STRIng EXAMPLE....WOw!!!"
+print "The string is: ", str
+print str.lower()
+
+print "=================================================="
+print "lstrip(): Removes all leading whitespace in string"
+str = "     this is string example....wow!!!"
+print "The string is ", str
+print str.lstrip()
+
+str = "88888888This is string example....wow!!!88888888"
+print "The string is: ", str
+print str.lstrip('8')
+
 print "=================================================="
 print "=================================================="
 print "=================================================="
