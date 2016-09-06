@@ -13,7 +13,6 @@ print "=================================================="
 print "string varibale"
 str1 = 'Hello World!'
 str2 = "Python Programming"
-
 print "str1 is : ", str1
 print "str2 is : ", str2
 print "str1[0] : ", str1[0]
@@ -34,7 +33,6 @@ for str_prt in str:
 print "=================================================="
 print " String formatting operator"
 print "My name is %s ans weight is %d kg!" % ('HuuHoang', 60)
-
 
 print "=================================================="
 print "triple quotes"
@@ -71,7 +69,6 @@ print "Encoding defaults to the default tring encoding"
 Str = "this is tring example...wow!!!"
 print "String is ", Str
 #Str = Str.encode('base64', 'strict')
-
 #print "Encoded string: " + str
 #print "Encoded String : " + Str.decode('base64', 'strict')
 
