@@ -286,9 +286,36 @@ print "The string is: ", str
 print str.rjust(50, '0')
 
 print "=================================================="
-print "=================================================="
-print "=================================================="
+print "split(str="",num=string.count(str)): Splits string according to delimiter str"
+print "(space if not provided) and returns list of substrings; split into at most num substrings if given"
+str = "Line1-abcdef \nLine2-abc \n\nLine4-abcd"
+print "The string is: ", str
+print str.split()
+print str.split(' ', 1) 
 
+print "=================================================="
+print "slpitlines(num=string.count(str)): Splits string at all(or num) NEWLINEs and returns a list of each line with NEWLINEs removed "
+str = "Line1-a b c d e f\nLine2- a b c \n\nLin4- a b c d"
+print str.splitlines()
+print str.splitlines(0)
+print str.splitlines(3)
+print str.splitlines(4)
+print str.splitlines(5)
+
+print "=================================================="
+print "startswith(str, begin=0, end=len(string)): Determines if string or s substring of string"
+print "(if starting index begin and ending index end are given) starts with substring str; return true if"
+print "so and false otherwise"
+str = "this is string example....wow!!!"
+print "The string is: ", str
+print str.startswith('this')
+print str.startswith('is', 2, 4)
+print str.startswith('this', 2, 4)
+
+
+print "=================================================="
+print "=================================================="
+print "=================================================="
 print "=================================================="
 print "=================================================="
 
