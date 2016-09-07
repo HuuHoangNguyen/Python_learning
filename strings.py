@@ -228,9 +228,97 @@ print "The string is: ", str
 print str.lstrip('8')
 
 print "=================================================="
+#from string import maketrans    # Required to call maketrans function
+#print "maketrans(): Returns a translation table to be used in translate function"
+#intab = "aeiou"
+#outtab = "12345"
+#trantab = maketrans(intab, outtab)
+#str ="this is string example....wow!!!"
+#print str.tranlate(trantab)
+
+print "=================================================="
+print "max(str) or min(str): Returns the max or min alphabetical character from the string str"
+str = "this is really a string example...wow!!!"
+print "The string is: ", str
+print "Max character is : " + max(str)
+
+str = "this_is_really_a_string_example...wow!!!"
+print "The string is: ", str
+print "Min character is : " + min(str)
+
+print "=================================================="
+print "replace(old, new [,max]): Replaces all occurrences of old in string "
+print "with new or at most max occurrences if max given"
+str = "this is string example...wow!!! this is really string"
+print "The string is: ", str
+print str.replace("is", "was")
+print str.replace("is", "was", 3)
+
+print "=================================================="
+print "rfind(str, begin=0,end=len(str)): Same as find(), but search backwards in string"
+str1 = "this is really string example....wow!!!"
+str2 = "is"
+
+print "The str1 is: ", str1
+print "The str2 is: ", str2
+
+print str1.rfind(str2, 0, 10)
+print str1.rfind(str2, 10, 0)
+print str1.find(str2)
+print str1.find(str2, 0, 10)
+print str1.find(str2, 10, 10)
+
+
+
+print "=================================================="
+print "rindex(str, begin=0, end=len(string)): Same as index(). but search backwards in string"
+str1 = "this is string example....wow!!!"
+str2 = "is"
+print "The str1 is: ", str1
+print "The str2 is: ", str2
+print str1.rindex(str2)
+print str1.rindex(str2)
+
+print "=================================================="
+print "rjust(width,[fillchar]): Return a space-padded string with the original string right-justified to a total of width columns"
+str = "this is string example....wow!!!"
+print "The string is: ", str
+print str.rjust(50, '0')
+
 print "=================================================="
 print "=================================================="
 print "=================================================="
+
 print "=================================================="
 print "=================================================="
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print "=================================================="
