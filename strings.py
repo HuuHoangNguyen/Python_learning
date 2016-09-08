@@ -1,4 +1,5 @@
 #!/usr/bin/python
+from string import maketrans            #
 
 str = 'Hello world! '
 
@@ -229,12 +230,12 @@ print str.lstrip('8')
 
 print "=================================================="
 #from string import maketrans    # Required to call maketrans function
-#print "maketrans(): Returns a translation table to be used in translate function"
-#intab = "aeiou"
-#outtab = "12345"
-#trantab = maketrans(intab, outtab)
-#str ="this is string example....wow!!!"
-#print str.tranlate(trantab)
+print "maketrans(): Returns a translation table to be used in translate function"
+intab = "aeiou"
+outtab = "12345"
+trantab = maketrans(intab, outtab)
+str ="this is string example....wow!!!"
+print str.translate(trantab)
 
 print "=================================================="
 print "max(str) or min(str): Returns the max or min alphabetical character from the string str"
@@ -291,7 +292,7 @@ print "(space if not provided) and returns list of substrings; split into at mos
 str = "Line1-abcdef \nLine2-abc \n\nLine4-abcd"
 print "The string is: ", str
 print str.split()
-print str.split(' ', 1) 
+print str.split(' ', 1)
 
 print "=================================================="
 print "slpitlines(num=string.count(str)): Splits string at all(or num) NEWLINEs and returns a list of each line with NEWLINEs removed "
@@ -312,40 +313,61 @@ print str.startswith('this')
 print str.startswith('is', 2, 4)
 print str.startswith('this', 2, 4)
 
+print "=================================================="
+print "strip([char]): Performs both lstrip() and rstrip() on string"
+print "The string is: ", str
+str = "0000000this is string example....wow!!!0000000"
+print str.strip('0')
 
 print "=================================================="
+print "swapcase(): Inverts case for all letters in string"
+str = "this is string example....wow!!!"
+print "The string is: ", str
+print str.swapcase()
+str = "THIS IS STRING EXAMPLE....WOW!!!"
+print str.swapcase()
+
 print "=================================================="
+print "title(): Return titlecased version of string, that is, all words befin with uppercase and the rest are lowercase"
+str = "this is string example...wow!!!"
+print "The string is: ", str
+print str.title()
+
 print "=================================================="
+print "translate(table, deletechars=""): Translates string according table str(256 chars), removing those in the del string"
+intab = "aeiou"
+outtab = "12345"
+trantab = maketrans(intab, outtab)
+#print "trantab is: ", trantab
+str = "this is string example....wow!!!"
+print "The string is: ", str
+print str.translate(trantab)
+
+str = "this is string example...wow!!!"
+print str.translate(trantab, 'xm')
+
 print "=================================================="
+print "upper(): Converts lowercase letters in string to uppercase"
+str = "This is string exmaple...wow!!!"
+print "The string is: ",str
+print "str.capitabize(): ", str.upper()
+
 print "=================================================="
+print "zfill(width): Return original string leftpadded with zeros to a totsl of width character; intended for numbers, "
+print "Zfill() retains any sign given(less one zero)"
+str = "this is string example....wow!!!"
+print "The string is: ", str
+print str.zfill(40)
+print str.zfill(50)
 
+print "=================================================="
+print "isdecimal(): Returns true if a unicode string contains only decimal character and false otherwise"
+str = u"this2009"
+print "The string is: ", str
+print str.isdecimal()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+str = u"23443434"
+print "The string is: ", str
+print str.isdecimal()
 
 print "=================================================="
