@@ -101,6 +101,18 @@ aList = list(aTuple)
 print " The list is :", aList
 
 print "=================================================="
+print "list.append(obj): Appends objects obj to list"
+aList = [123, 'xyz', 'zara', 'abc']
+print "The list is: ", aList
+aList.append(2009)
+print "The List after updated: ", aList
+
+print "=================================================="
+print "list.count(obj): Returns count of how many times obj occurs in list"
+
+print "=================================================="
+print "=================================================="
+print "=================================================="
 print "=================================================="
 print "=================================================="
 print "=================================================="
