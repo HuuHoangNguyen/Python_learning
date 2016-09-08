@@ -109,6 +109,10 @@ print "The List after updated: ", aList
 
 print "=================================================="
 print "list.count(obj): Returns count of how many times obj occurs in list"
+aList = [123, 'xyz', 'zara', 'abc', 123]
+print "The list is: ", aList
+print "Count for 123: ", aList.count(123)
+print "Count for zara: ", aList.count('zara')
 
 print "=================================================="
 print "=================================================="
