@@ -115,9 +115,54 @@ print "Count for 123: ", aList.count(123)
 print "Count for zara: ", aList.count('zara')
 
 print "=================================================="
+print "list.extend(seq): Appends the contents of seq to list"
+aList = [123, 'xyz', 'zara', 'abc', 123]
+bList = [2009, 'manni']
+print "The aList is: ", aList
+print "The blist is: ", bList
+aList.extend(bList)
+print "Extended aList is: ", aList
+
 print "=================================================="
+print "list.index(obj): Returns the lower index in list that obj appears"
+aList = [123, 'xyz', 'zara', 'abc']
+print "The aList is: ", aList
+print "Index for xyz: ", aList.index('xyz')
+print "Index for zara: ", aList.index('zara')
+
 print "=================================================="
+print "list.insert(index, obj): Inserts objects obj into list at offset index"
+aList = [123, 'xyz', 'zara', 'abc']
+print "The aList is: ", aList
+aList.insert(3, 2009)
+print "Final list : ", aList
+
 print "=================================================="
+print "list.pop(obj=list[-1]): Removes and return last object or obj from list"
+aList = [123, 'xyz', 'zara', 'abc']
+print "A List : ", aList.pop()
+print "B List : ", aList.pop(2)
+
 print "=================================================="
+print "list.remove(obj): Removes object obj from list"
+aList = [123, 'xyz', 'zara', 'abc', 'xyz']
+print "The aList is: ", aList
+aList.remove('xyz')
+print "List after remove xyz: ", aList
+aList.remove('abc')
+print "List after remove abc", aList
+
 print "=================================================="
+print "list.reverse(): Reverses objects of list in place"
+aList = [123, 'xyz', 'zara', 'abc', 'xyz']
+print "The aList is: ", aList
+aList.reverse()
+print "aList is : ", aList
+
 print "=================================================="
+print "list.sort([func])"
+aList = [123, 'xyz', 'zara', 'abc', 'xyz']
+print "The aList is: ", aList
+aList.sort()
+print "List after sort is: ", aList 
+
