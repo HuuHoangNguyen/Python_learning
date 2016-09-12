@@ -39,7 +39,7 @@ print "=================================================="
 print "Updating Tuples"
 print "Tuples are immutable which means you can not update or change the value of tuples element."
 print "You can able to take portions of existing tuples to creatr new tuples as the following example demonstrates"
-tuple1 = (12. 34, 56)
+tuple1 = (12, 34, 56)
 tuple2 = ('abc', 'xyz')
 #Following action is n ot valid for tuples
 #tuple1[0] = 100
@@ -48,9 +48,18 @@ tuple3 = tuple1 + tuple2
 print "Tuple3 is: ", tuple3
 
 print "=================================================="
+print "Delete Tuple Elements"
+print "Removing individual tuple elements is not possible. There is, of course, nothing"
+print "wrong with ptting together another tuple with the undesired element discarded"
+
+tup = ('physics', 'schemistry', 1997, 2000)
+print "The tuple is: ", tup
+del tup
+print "After deleting tup: "
+#print tup
 
 print "=================================================="
-print "=================================================="
+
 print "=================================================="
 print "=================================================="
 print "=================================================="
