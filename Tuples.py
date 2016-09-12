@@ -59,12 +59,46 @@ print "After deleting tup: "
 #print tup
 
 print "=================================================="
+print "cmp(tuple1, tuple2): Compares elements of both tuples"
+tuple1, tuple2 = (123, 'xyz'), (456, 'abc')
+print "The tuple1 is: ", tuple1
+print "The tuple2 is: ", tuple2
+
+print "cmp(tuple1, tuple2): ", cmp(tuple1, tuple2)
+print "cmp(tuple2, tuple1): ", cmp(tuple2, tuple1)
+
+tuple3 = tuple2 + (678, )
+print "The tuple3 is: ", tuple3
+print "cmp(tuple2, tuple3): ", cmp(tuple2, tuple3)
 
 print "=================================================="
+print "len(tuple): Given the total length of the tuple"
+tuple1, tuple2 = (123, 'zara', 'xyz'), (456, 'abc')
+print "The Tuple1 is: ", tuple1
+print "The Tuple2 is: ", tuple2
+print "First tuple length is: ", len(tuple1)
+print "Second tuple length is: ", len(tuple2)
+
 print "=================================================="
+print "max(tuple) or min(tuple): Returns item from the tuple with max or min value"
+tuple1, tuple2 = (123, 'xyz', 'zara', 'abc'), (456, 700, 200)
+print "The tuple1 is: ", tuple1
+print "The tuple2 is: ", tuple2
+print "Max value element of tupple1 is : ", max(tuple1)
+print "Max value element of tupple2 is : ", max(tuple2)
+print "Min value element of tupple1 is : ", min(tuple1)
+print "Min value element of tupple2 is : ", min(tuple2)
+
 print "=================================================="
-print "=================================================="
-print "=================================================="
+print "tuple(seq): converts a list into tuple"
+aList = [123, 'xyz', 'zara', 'abc']
+aTuple = tuple(aList)
+
+print "The aList is:  ", aList
+print "The aTuple is: ", aTuple
+del aList[1]
+print"The aList after delete aList[1]: ", aList
+
 
 
 
