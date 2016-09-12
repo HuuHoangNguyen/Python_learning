@@ -104,6 +104,75 @@ print "Equivalent string: %s" % str(aDict)
 print "=================================================="
 print "type(dist): Returns the type of the passed variable. If passed variable is dictionary, then it woukd return a dictionary type"
 aDict = {'Name': 'Zara', 'Age': 7}
-print "Variable Type: %s " % type(aDict)\
+print "Variable Type: %s " % type(aDict)
 
 print "=================================================="
+print "dict.clean(): Removes all element of dictionary dict"
+aDict = {'Name': 'Zara', 'Age': 7}
+print "Length of aDict : %d " %len(aDict)
+print "The aDict is: %s " %str(aDict)
+aDict.clear()
+print "Length of aDict: %d " %len(aDict)
+print "The aDict is: %s " %str(aDict)
+
+print "=================================================="
+print "dist.copy():Returns a shollow copy of dictionary dict"
+aDict = {'Name': 'Zara', 'Age': 7}
+bDict = aDict.copy()
+print "The aDict is: %s" %str(aDict)
+print "The bDict is: %s" %str(bDict)
+
+print "=================================================="
+print "dict.fromkeys(seq [, value]): Create a new dictionary with keys from seq and values set to value"
+seq =('name', 'age', 'sex')
+aDict = dict.fromkeys(seq)
+print "New Dictionary: %s " %str(aDict)
+bDict = dict.fromkeys(seq, 10)
+print "New Dictionary: %s " %str(bDict)
+
+print "=================================================="
+print "dict.get(key, default=None): For 'key' key, returns value or default if key not in dictionary"
+aDict = {'Name': 'Zara', 'Age': 7}
+
+print "Value: %s" % aDict.get('Age')
+print "Value: %s" % aDict.get('Education')
+print "Value: %s" % aDict.get('Education', 'Never')
+
+
+print "=================================================="
+print "dist.has_key(key): Returns True if key in dictionary dict, False otherwise"
+aDict ={'Name': 'Zara', 'Age': 7}
+print "Value: %s "% aDict.has_key('Age')
+print "Value: %s "% aDict.has_key('Sex')
+
+print "=================================================="
+print "dict.items(): Returns a list of dist's(key, value) tuple pairs"
+aDict = {'Name': 'Zara', 'Age': 7}
+print "Value: %s" %aDict.items()
+
+print "=================================================="
+print "dict.key(): Returns list of dicrionary dict's keys'"
+aDict = {'Name': 'Zara', 'Age': 7}
+print "Value : %s " %aDict.keys()
+
+print "=================================================="
+print "dict.setdefault(key, default=None): Similar to get(), but will set dict[key] = default if key is not already in dict"
+aDict = {'Name': 'Zara', 'Age': 7}
+print "The aDict is: %s " % str(aDict)
+print "Value: %s "% aDict.setdefault('Age', None)
+print "Value: %s "% aDict.setdefault('Sex', None)
+print "the sDict is: %s" %str(aDict)
+
+print "=================================================="
+print "dict.update(dict2): Adds dictionary dict2's key-value to dict"
+aDict = {'Name': 'Zara', 'Age': 7}
+bDict = {'Sex': 'Female'}
+print "The aDict is: %s " %str(aDict)
+print "The bDict is: %s " %str(bDict)
+aDict.update(bDict)
+print "The aDict is: %s " %str(aDict)
+
+print "=================================================="
+print "dict.values(): Returns list of dictionary dict's values"
+aDict = {'Name': 'Zara', 'Age': 7}
+print "The values in aDict is %s" % aDict.values()
