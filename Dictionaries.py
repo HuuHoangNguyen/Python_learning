@@ -93,48 +93,17 @@ print "Returns value: %d " % cmp(dict3, dict4)
 print "Returns value: %d " % cmp(dict4, dict1)
 
 print "=================================================="
-
+print "len(dist): Gives the total length of the dictionary. This would be qual to the number of items in the dictionary"
+aDict = {'Name': 'Zara', 'Age': 7}
+print "Length of aDict is %d " % len(aDict)
+print "=================================================="
+print "str(dist); Produces a printable string representation of a dictionary"
+aDict = {'Name': 'Zara', 'Age': 7}
+print "Equivalent string: %s" % str(aDict)
 
 print "=================================================="
-
-
-print "=================================================="
-
-
-print "=================================================="
-
-
-print "=================================================="
-
-
-print "=================================================="
-
-
-print "=================================================="
-
-
-print "=================================================="
-
-
-print "=================================================="
-
-
-print "=================================================="
-
-
-print "=================================================="
-
-
-print "=================================================="
-
-print "=================================================="
-
-print "=================================================="
-
-print "=================================================="
-
-print "=================================================="
-
-print "=================================================="
+print "type(dist): Returns the type of the passed variable. If passed variable is dictionary, then it woukd return a dictionary type"
+aDict = {'Name': 'Zara', 'Age': 7}
+print "Variable Type: %s " % type(aDict)\
 
 print "=================================================="
