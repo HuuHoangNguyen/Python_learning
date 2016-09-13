@@ -205,11 +205,42 @@ print "=================================================="
 print """time.strptime(str, fmt='%a %b %d %H:%M:%S %Y'): Parses str accoding to format string 
 fmt and returns the instant in time-tuple format 
 """
+print "----------"
 struct_time = time.strptime("30 Nov 00", "%d %b %y")
 print "Return tuple: %s " % struct_time
 
 print "=================================================="
+print "time.time(): Return current time instant, a floating-point number of seconds since the epoch"
+print "----------"
+print "time.time %f " % time.time()
+print time.localtime(time.time())
+print time.asctime(time.localtime(time.time()))
+
 print "=================================================="
+print """time.tzset(): Reset the time conversion rules used by the library routines. 
+The environment variable TZ specifies how this is done"""
+print "----------"
+import os
+
+os.environ['TZ'] = 'EST+05EDT,M4.1.0,M10.5.0'
+time.tzset()
+print time.strftime('%X %x %Z')
+
+os.environ['TZ'] = 'AEST-10AEDT-11,M10.5.0,M3.5.0'
+time.tzset()
+print time.strftime('%X %x %Z')
+
+print "=================================================="
+print """
+time.timezone: Attribut time.timezone is the offset in seconds of the local time
+(without DSt) from UTC (>0 in the Americas; <=0 in most of Europe, Asia, Africa)
+
+time.tzname: Attibute time.tzname is a patr of locale-dependent strring, 
+which arethe names of the local time zone without and with DSTS, rspectively
+"""
+
+print "=================================================="
+
 print "=================================================="
 
 
