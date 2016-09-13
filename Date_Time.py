@@ -135,6 +135,81 @@ t = (2016, 9 , 12, 16, 55, 30, 0, 256, 0)
 secs = time.mktime(t)
 print "time.mktime(t) : %f " %secs
 print "asctime(localtime(secs)): %s " %time.asctime(time.localtime(secs))
+
+print "=================================================="
+print "timesleep(secs): Suspends the calling thread for secs seconds"
+print "Start: %s " %time.ctime()
+time.sleep(5)
+print "End: %s" % time.ctime()
+
+print "=================================================="
+print """time.strftime(ftm[,tupletime]): Converts a tuple or struct_time representing a time as returned 
+by gmtime() or localtime() to a string as specified by the formt argument.
+"""
+
+"""
+Parameters
+    t       : This is the time in number of seconfs to be formatted.
+    format  : This is the directive which would be used  to format given time
+                The following directives can be embedded in the format string
+
+Directive:
+    %a  : abbreviated weekday name 
+    %A  : full weekday name 
+    %b  : abbreviated month name 
+    %B  : Full month name 
+    %c  : Preferred date and time representation
+    %C  : Century number (the year divided by 100, range 00 to 99)
+    %d  : day of the month (01 to 31)
+    %D  : same as %m/%d/%y 
+    %e  : date of the month (1 to 31)
+    %g  : like %G, but without the century
+    %G  : 4 digit year corresponding to the ISO week number (see %V).
+    %h  : same as %b 
+    %H  : hour, using a 24-hour clock (00 to 23)
+    %I  : hour, using a 12-hour clock (01 to 12)
+    %j  : day of the year (001 t0 366)
+    %m  : month (01 to 12)
+    %n  : newline character
+    %p  : either am or pm accorfing to the given time value  
+    %r  : time in a.m or p.m notation
+    %R  : Time in 24hours natation
+    %S  : Second
+    %t  : tab character
+    %T  : current time, equal to %H:%M:%S    
+    %u  : weekday as a number (1 to 7), Monday=1. Warning: Im Sin Solaris Sunday=1
+    %U  : week number of the current year, starting with the first Sunfday as 
+          the first day of the first week
+    %V  : The ISO 8601 week number of the current year(01 to 53), whwere week 1 is the first week that 
+          has at least 4 days in the current year, and with Monday as the first day of the week
+    %W  : week number the current year, starting with the first Mondat ad the first day of the first week
+    %w  : day of the week as a decimal. Sunday=0
+    %x  : Preferred date representation without the time
+    %X  : Preferred time representation without the date
+    %y  : year without a century (range 00 to 99)
+    %Y  : year includeing the century
+    %Z or
+    %z  : time zone or name or abbreviation
+    %%  : a literal % character
+
+Return Value:
+    This method does not return any value
+"""
+
+print "----------"
+t = t = (2016, 9 , 12, 16, 55, 30, 0, 256, 0)
+t = time.mktime(t)
+print time.strftime("%b %d %Y %H:%M:%S", time.gmtime(t))
+
+print "=================================================="
+print """time.strptime(str, fmt='%a %b %d %H:%M:%S %Y'): Parses str accoding to format string 
+fmt and returns the instant in time-tuple format 
+"""
+struct_time = time.strptime("30 Nov 00", "%d %b %y")
+print "Return tuple: %s " % struct_time
+
+print "=================================================="
+print "=================================================="
 print "=================================================="
 
 
