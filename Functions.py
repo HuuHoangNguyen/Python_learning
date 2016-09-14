@@ -108,44 +108,44 @@ def MySum3(arg1, arg2):
 
 
 def main():
-    print "-----------------------------------------\n"
+    print "\n-----------------------------------------"
     myprint("I'm first call to user defined function!")
     myprint("Agaim second call to the same functions")
 
-    print "-----------------------------------------\n"
+    print "\n-----------------------------------------"
     mylist = [10, 20, 30]
     print "the mylist inside 'mychange' function ", mylist
     mychange(mylist)
     print "the mylist after 'mychange' function ", mylist
 
-    print "-----------------------------------------\n"
+    print "\n-----------------------------------------"
     mylist = [10,20, 30]
     print "The mylist is: ", mylist
     mychange2(mylist)
     print "Values outside the function ", mylist
 
-    print "-----------------------------------------\n"
+    print "\n-----------------------------------------"
     # myprint()
     myprint (str = "My string")
 
-    print "-----------------------------------------\n"
+    print "\n-----------------------------------------"
     printinfo(age=50, name="miki")
     printinfo2(age=50, name="HuuHoang")
     printinfo2(name="H_H_Nguyen")
 
-    print "-----------------------------------------\n"
+    print "\n-----------------------------------------"
     PrintInfo3(10)
     PrintInfo3(70, 60, 50)
 
-    print "-----------------------------------------\n"
+    print "\n-----------------------------------------"
     print "Value of total 10 & 20 is : ", MySum(10, 20)
     print "Value of total 20 & 20 is : ", MySum(20, 20)
 
-    print "-----------------------------------------\n"
+    print "\n-----------------------------------------"
     oTotal = MySum2(10, 20)
     print "Outside the function: ", oTotal
     
-    print "-----------------------------------------\n"
+    print "\n-----------------------------------------"
     MySum3(10, 25)
     print "Outside the function global total: ", total
 
