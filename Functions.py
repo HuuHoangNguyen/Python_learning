@@ -11,6 +11,7 @@ def mychange(mylist):
     print "Value inside the mylist is: ", mylist
     return
 
+def mychange2
 
 
 def main():
@@ -20,7 +21,10 @@ def main():
 
     print "-----------------------------------------\n"
     mylist = [10, 20, 30]
-    mychange(mylist)    
+    print "the mylist inside 'mychange' function ", mylist
+    mychange(mylist)
+    print "the mylist after 'mychange' function ", mylist
+
     
 
 if __name__ == "__main__":
