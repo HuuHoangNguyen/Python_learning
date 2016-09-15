@@ -36,7 +36,7 @@ Syntax:
 For examble, to import the function fibonacci frm the module fib,
              use the following
 """
-from fib import fibonacci
+# from fib import fibonacci
 """
 This statement dees not import the entire module fib into the current 
 namespace; it just introduces the item fibonacci from the module fib into
@@ -71,7 +71,88 @@ and their corresponding objects(values).
 A Python statement can access variables in a local namespace and in the global namespace. If a local and a 
 global variable have the same name. the local variable shadows the  global variable.
 
+Each function has sits own local namespace. Class methods follow the same scoping rule as ordinary functions.
 
+Python makes educated guesses on whether variables are local or global. It assumes that any variable assigned 
+a value in a function is local.
+
+Therefore, in order to assign a value to a global variable within a function, you must first use the 'global' statement
+
+The statement 'global VarNam' tell Python that VarName is a global variable. Python stops searching the local namespace for
+ the variable.
 """
 
+Money = 2000
+
+def AddMoney():
+    #Uncomment the following line to fix the code.
+    global Money
+    Money = Money + 1
+
+import math
+import sys
+
+    
+def main():
+    print "\n-----------------------------------------"
+    print Money
+    AddMoney()
+    print Money
+    
+
+    print """
+    ----------------------------------------------------------------------------------
+    The 'dir()' Function
+    The dir() build-in function returns a sorted list of strings containing the names defined
+by a module.
+    The listt contains the names of all the modules, variables and functions that are defined 
+in a module. 
+    """
+
+    content = dir (math)
+    print content
+
+    print "==========="
+    print dir(Support)
+
+
+
+    print """
+    The global() and local() Functions
+
+    The glocal() and local() functions can be used to return the names in the global and local 
+    namespcaes depending on the localtion from where they are called.
+
+    Is locals() is called from within a function, it will return all the names that can be accessed 
+    locally from that function.
+
+    The return type of both these functions is dicrionary. Therefore, name can be extracted using the
+    key() function.
+
+    --------------------------------
+    The reload() Functions.
+
+    When the module is imported into a script, the code is the tip-level portion of a module is execute
+    only once.
+    Therefore, if you want to reexecute the top-leval coded in a module, you can use the reload() function. 
+    The reload() functions imports a previously imported module again. The syntax of the reload() function is 
+    'reload(module_name)'
+
+    --------------------------------
+    Packages in Python
+    A package is a hierachical file directory structure that defines a single Python applycation environment 
+    that consists of modules and subpackages and sub-subpackages, and so on.
+
+    Consider a file Pots.py available in Phone directory. This file has following line of source code.
+
+    """
+
+
+
+
+
+
+if __name__ == "__main__":
+    main()
+    
 
