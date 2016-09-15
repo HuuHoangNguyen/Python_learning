@@ -68,6 +68,10 @@ The sys,path variable contains the current directory, PYTHONPATH, and the instal
 Variables are names (identifiers) that map to objects. A namespace is a dictionary of variable names(keys)
 and their corresponding objects(values).
 
+A Python statement can access variables in a local namespace and in the global namespace. If a local and a 
+global variable have the same name. the local variable shadows the  global variable.
+
+
 """
 
 
