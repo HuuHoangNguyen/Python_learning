@@ -90,6 +90,9 @@ def AddMoney():
     Money = Money + 1
 
 import math
+import sys
+
+    
 def main():
     print "\n-----------------------------------------"
     print Money
@@ -111,6 +114,39 @@ in a module.
 
     print "==========="
     print dir(Support)
+
+
+
+    print """
+    The global() and local() Functions
+
+    The glocal() and local() functions can be used to return the names in the global and local 
+    namespcaes depending on the localtion from where they are called.
+
+    Is locals() is called from within a function, it will return all the names that can be accessed 
+    locally from that function.
+
+    The return type of both these functions is dicrionary. Therefore, name can be extracted using the
+    key() function.
+
+    --------------------------------
+    The reload() Functions.
+
+    When the module is imported into a script, the code is the tip-level portion of a module is execute
+    only once.
+    Therefore, if you want to reexecute the top-leval coded in a module, you can use the reload() function. 
+    The reload() functions imports a previously imported module again. The syntax of the reload() function is 
+    'reload(module_name)'
+
+    --------------------------------
+    Packages in Python
+    A package is a hierachical file directory structure that defines a single Python applycation environment 
+    that consists of modules and subpackages and sub-subpackages, and so on.
+
+    Consider a file Pots.py available in Phone directory. This file has following line of source code.
+
+    """
+
 
 
 
