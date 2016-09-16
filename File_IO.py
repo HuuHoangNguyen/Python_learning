@@ -70,6 +70,51 @@ Here are parameter detail:
     value as an integer greater than 1, then buffering action is performed with the indicated buffer size.
     If negative, the buffer size is the system default( default behavior)
 
+===============================================================================================
+Modes           Description
+ r          Opens a file for reading only. The file pointer is placed at the begining of the file.
+            This is the default mode.
+
+ rb         Opens a file for reading onl in binary format. The file pointer is place at the begin of the file. 
+            This is the default mode.
+
+ r+        Opens a file for both reading and writing. Teh file pointer placed at the begin of the file. 
+
+ rb+       Opens a file for both reading and writing in binary format. The file pointer placed at the beginning of the file
+
+ w         Opens a file for writing only. Overwrites the file if the file exits. If the file does not exist, creates a new file
+           for writing.
+ 
+ wb        Opens a file for writin only. Overwrites the file if the file exists. If the file doed not exist, creates a new file for 
+           writing.
+
+ w+        Open a file for both writing and reading. Overwrites the file if the file exist. If the file does not exist, 
+           creates a new file for writing.
+
+ wb+      Open the file for both writing and reading. Overwrite the file if the file exist. If the file does not exist, create a new 
+          file for reading and writing.
+
+ a        Open the file for appending. The file pointer is at the end of the file if the file exists. That is, the file is in the append
+          mode. If the file node exist, it creates a new file for writing.
+        
+ ab       Open a file for appending in binary format. The file pointer is at the end of the file if the file exists. That is, the file is in 
+          the append mode. If the file does not exist. It create a new file for writing.
+
+ a+      Open a file for appeding and reading. The file pointer is at the end of the file if the file exists. The file open in the deppend mode. 
+         If the file does not exist, it creates a new file for writing.
+
+ ab+     Open a file for appending and reading in binary mode. The file pointer is at the end of the file if the file exists. The file open in append
+         mode. If the file does not exist, it creates a new file for reading and writing.
+
+===============================================================================================
+The file Object Attributes:
+
+Once a file is opened adn you have one file object, you can get various information releted to that file.close
+Here is a list of all atributes related to file object
+
+
+
 
 """
+
 
