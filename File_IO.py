@@ -233,7 +233,43 @@ print "==========================================================="
 """
     Directories in Python
 All files are contained within various directories, and Python has no problem hangling these too.
-The os module has several 
+The 'os'' module has several mothods that help you create, remove, and change directories. 
+
+    The 'mkdir()' Methon
+
+You can use the 'mkdir()' method of the 'os' module to create directories in the current directory.
+You need to supply an argument to this method which contains the name if the directory to be created.
+
+    Syntax :    os.mkdir("newdir")
+    
 """
+
+import os
+import time
+#Create a directory 'test'
+os.mkdir('Test')
+time.sleep(5)
+os.rmdir("Test")
+
+print "==========================================================="
+"""
+    The chdir() Method 
+You can use the 'chdir()' method to change the current directory. The 'chdir()' method takes an argument,
+which is the name of the directory that you want to make the current directory.
+    Syntax:     os.chdir("newdir")
+
+"""
+
+
+Str = os.chdir("/home/huuhoang/Src")
+
+print "==========================================================="
+"""
+    The 'getcwd()' Method 
+The getcwd() method displays the current working directory
+    Syntax: os.getcwd()
+"""
+Str = os.getcwd()
+print "The current dir is: ", Str
 
 
