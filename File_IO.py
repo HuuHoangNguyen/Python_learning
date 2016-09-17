@@ -24,8 +24,8 @@ The 'raw_input' Function:
     The raw_imput([prompt]) function reads one line from standarrd input and returns it as a string(removing the trailing newline).
 
 """
-Str = raw_input("Enter yout input: ")
-print "Received input is: ", Str
+# Str = raw_input("Enter yout input: ")
+# print "Received input is: ", Str
 
 """
 THis prompts you to enter any string and it would display same strring on the screen.
@@ -36,8 +36,8 @@ print """
 The input[(prompt)] functions is equivalent to raw_input, expect that it assumes the input is a valid Python expression and returns the evaluated
 result to you
 """
-Str = input("Enter your input")
-print "Received input is: ", Str
+# Str = input("Enter your input")
+# print "Received input is: ", Str
 
 """Opening and Closing Files
 Until now, you have been reading and writing to the standard input and output.
@@ -112,9 +112,47 @@ The file Object Attributes:
 Once a file is opened adn you have one file object, you can get various information releted to that file.close
 Here is a list of all atributes related to file object
 
+    Attribute           Decription 
+ file.closed            Return true if file is close, false otherwise
+ file.mode              Return access mode with which file was opened.
+ file.name              Return name of the file.close
+ file.softspace         Returns false if space explicitky required with print, true otherwise.
+"""
 
+#Open a file
+fo = open("foo.txt", "wb")
+print "Name of the file: ", fo.name
+print "Closed or not :", fo.closed
+print "Opening mode: ", fo.mode
+print "Softspace flag: ", fo.softspace
 
 
 """
+The close() Mothod
+The 'close()' mothod of a file object flushes any unwritten infomataion and closes
+the file object, after which no more writing can be done.
 
+Python automatically closes a file when the reference object of the file is reasigned 
+to another file. It is a good practice to use the 'close()' method to close a file.
 
+Syntax: 'fileObject.close()'
+"""
+
+#close open file
+print "Close file and check"
+fo.close()
+print "Closed or not :", fo.closed
+
+"""
+Reading and writing Files
+The 'file' object provides a set of access methods to make our lives easier.
+We would see how to use 'read()' adnd "write()" methods to read and writes files.
+
+The write() Method.
+The 'write()' method writes string to an open file. It is important to note that
+Python strings can have binary data and not just text.
+
+The write() method does not add a newline character ('\n') to the end of string.
+
+Syntax: fileObject.write(string)
+"""
