@@ -230,4 +230,10 @@ os.remove("foo.txt")
 
 
 print "==========================================================="
+"""
+    Directories in Python
+All files are contained within various directories, and Python has no problem hangling these too.
+The os module has several 
+"""
+
 
