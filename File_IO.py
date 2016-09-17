@@ -138,6 +138,7 @@ to another file. It is a good practice to use the 'close()' method to close a fi
 Syntax: 'fileObject.close()'
 """
 
+print "==========================================================="
 #close open file
 print "Close file and check"
 fo.close()
@@ -156,3 +157,77 @@ The write() method does not add a newline character ('\n') to the end of string.
 
 Syntax: fileObject.write(string)
 """
+
+print "==========================================================="
+#Open a file 
+fo = open ("foo.txt", "wb")
+fo.write("Python is a great language.\nYeah its great!!\n")
+
+#Close open file 
+fo.close()
+
+
+print "==========================================================="
+"""
+The read() Mothod
+The read() method reads string from an open file. It is important to note that Python string can have binary data, Apart from text.
+
+Syntax 
+    fileObject.read([count])
+
+    Here, passed parameter is the number of btes to be read from the opend file. This method starts reading from begining of the file,
+    and if count is missing, then it tries to read as much as posible, maybe until the end of file. 
+"""
+
+fo = open("foo.txt", "r+")
+Str = fo.read(10)
+print "Read String is : ", Str
+
+#Close open file
+fo.close()
+
+print "==========================================================="
+"""
+    File Posibles
+The 'tell()' method tells you the current position within the file. in other worlds, the next read or write will 
+occur at that many bytes from the begining of the file
+
+The 'seek(offset[, from])' method changes the current file position. The offset argumen indicates the number of bytes to be move.
+The from argument specifies the reference position from where the byte are to be moved.
+    If from iss set to 0, it means use thee beginning of the file as the reference position and 1 means use the current position 
+    as the reference position and if it is set to 2 then the end of the file would be taken as the reference position.
+    
+"""
+#Open the file
+fo = open("foo.txt", "r+")
+Str = fo.read(10)
+print "Read string is: ", Str
+
+#Check current position
+position = fo.tell()
+print "Current the file position: ", position
+
+#Reposition poiter at the begin one again
+position = fo.seek(0, 0)
+Str = fo.read(10)
+print "Again read String is: ", Str
+
+#Close the file
+fo.close()
+
+print "==========================================================="
+"""
+    The remove() Method 
+You can use the remove() method to delete file by supplying the name of the file to be deleted as the argument
+
+
+"""
+import os
+
+#Remove foo.txt file
+
+os.remove("foo.txt")
+
+
+print "==========================================================="
+
