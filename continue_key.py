@@ -2,8 +2,9 @@
 
 for letter in "Python":         #First example
     if letter == 'h':
-        continue
-    print "Current Letter value: ", letter
+        pass
+    else:
+        print "Current Letter value: ", letter
 
 
 var = 10                # Second example
