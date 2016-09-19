@@ -21,17 +21,3 @@ print Kelvin2Fahrenheit(273)
 print int(Kelvin2Fahrenheit(505.78))
 print Kelvin2Fahrenheit(-5)
 
-
-"""
-Exception
-Syntax:
-    try:
-        #You do your oprations here.
-    except ExceptionI:
-        #If the is ExceptionI, then execute this block
-    except ExceptionII:
-        #If the is ExceptionI, then execute this block
-    ......................
-    else:
-        If there is no exception then execute this block. 
-"""     
