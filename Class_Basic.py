@@ -178,3 +178,22 @@ v1 = Vector(2, 10)
 v2 = Vector(5, -2)
 print v1 + v2
 
+"""
+======================================================================================
+     Data Hiding
+An objects;s attributrs may or may not be visible outside the class definition. You need 
+to name attributes with a double underscore prefix, and those attriubutes athen are not be directly visble to outsiders.
+
+"""
+class JustCounter:
+    __secretCount = 0
+
+    def count(self):
+        self.__secretCount +=1
+        print self.__secretCount
+
+counter = JustCounter()
+counter.count()
+counter.count()
+
+print counter._JustCounter__secretCount
