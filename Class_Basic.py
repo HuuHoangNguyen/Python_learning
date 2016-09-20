@@ -30,5 +30,6 @@ emp1.displayEmployeeInfo()
 emp2.displayEmployeeInfo()
 print "Total Employee %d" % Employee.empCount
 print "Document of class is %s" %Employee.__doc__
-print "Document of class is %s" %Employee.__main__
-print "Document of class is %s" %Employee.__doc__
+print "Class name %s" %Employee.__name__
+print "Module class is %s" %Employee.__module__
+# print "Base class is %s" %Employee.__bases__
