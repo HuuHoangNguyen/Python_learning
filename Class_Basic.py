@@ -24,8 +24,11 @@ class Employee:
 
 
 
-emp1 = Employee("Zara", 2000, 25)
+emp1 = Employee("Zara ", 2000, 25)
 emp2 = Employee("Manni", 5000, 35)           
 emp1.displayEmployeeInfo()
 emp2.displayEmployeeInfo()
 print "Total Employee %d" % Employee.empCount
+print "Document of class is %s" %Employee.__doc__
+print "Document of class is %s" %Employee.__main__
+print "Document of class is %s" %Employee.__doc__
