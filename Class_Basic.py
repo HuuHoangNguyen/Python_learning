@@ -33,3 +33,11 @@ print "Document of class is %s" %Employee.__doc__
 print "Class name %s" %Employee.__name__
 print "Module class is %s" %Employee.__module__
 # print "Base class is %s" %Employee.__bases__
+
+"""
+    Destroyin Objects (Farbage Collection)
+Python deletes unneeded objects(built-in types or class instances)
+automatically to free the memory space. The process by which Python 
+periodically reclaims blocks of memory that no longer are in use 
+is termed Garbage Collection
+"""
